@@ -3,8 +3,16 @@
    "how to change link color." */
 
 body {
-  background-color: rgb(15, 15, 15);
-  color: rgb(197, 197, 197);
-  font-family: monospace;
-  font-size: 5em;
+    background-color: rgba(15, 15, 15, 1);
+    color: rgba(197, 197, 197, 1);
+    font-family: monospace;
+    font-size: 2em;
+}
+
+h1 {
+    color: rgba(207, 207, 207, 1);
+    font-size: 5em;
+}
+h1:hover {
+    color: rgba(197, 197, 197, 1);
 }
