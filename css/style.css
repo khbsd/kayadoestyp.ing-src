@@ -69,3 +69,7 @@ h2, h2 a, h2 a:active, h2 a:visited{
     object-fit: cover;
     border-radius: 50%;
 }
+
+.bully-you {
+    font-size: .25rem;
+}
