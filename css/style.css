@@ -1,74 +1,128 @@
+:root {
+    --primary-lilac-full: rgba(201, 147, 236, 1);
+    --transparent: rgba(0, 0, 0, 0);
+}
+
+
 body {
     background-color: rgba(15, 15, 15, 1);
     color: rgba(195, 195, 195, 1);
     font-family: monospace;
     font-size: 1.125rem;
     margin-left: 2rem;
-    padding-left: 2rem;
     margin-top: 0rem;
+    padding-left: 2rem;
     padding-top: 0rem;
+}
+
+ul {
+    list-style: none;
 }
 
 h1, h1 a, h1 a:active, h1 a:visited {
     color: rgba(210, 210, 210, 1);
     font-size: 4rem;
     margin-bottom: 0rem;
-    padding-bottom: 0rem;
     margin-top: 1rem;
+    padding-bottom: 0rem;
     padding-top: 1rem;
     text-decoration: none;
+} h1 a:hover {
+    color: var(--primary-lilac-full);
 } h1:hover {
     color: rgba(130, 130, 130, 1);
 }
 
-h2, h2 a, h2 a:active, h2 a:visited{
+h2, h2 a, h2 a:active, h2 a:visited {
     color: rgba(200, 200, 200, 1);
     font-size: 1.5rem;
     margin-top: 0rem;
     padding-top: 0rem;
     text-decoration: none;
-} h2:hover {
+} h2 a:hover {
+    color: var(--primary-lilac-full);
+}  h2:hover {
     color: rgba(130, 130, 130, 1);
+}
+
+
+hr {
+    background-image: radial-gradient(ellipse, var(--primary-lilac-full), var(--transparent));
+    border-style: none;
+    height: 0.5rem;
+    margin-right: 4rem;
+}
+
+
+.working-on, .working-on a, .working-on a:active, .working-on a:visited  {
+    color: rgba(210, 210, 210, 1);
+    font-size: 1.1rem;
+    text-decoration: none;
+} .working-on a:hover {
+    color: var(--primary-lilac-full);
+}  .working-on ul {
+    margin-left: -2rem;
+    margin-top: -0.5rem;
+} .working-on li {
+    line-height: 2rem;
+} .working-on p:hover, .working-on li:hover {
+    color: rgba(130, 130, 130, 1);
+} .working-on li::before {
+    content: ">";
+} .working-on li:hover::before {
+    color: rgba(200, 200, 200, 1);
 }
 
 
 .about-me {
     display: inline-flex;
+} @media only screen and (max-width: 600px) {
+    .about-me {
+        display: inline-block;
+    }
 }
 
+
+
 .bio-list {
-    font-size: 1.125rem;
+
 } .bio-list ul {
-    list-style: none;
-    justify-content: center;
+    padding-top: 2.5rem;
 } .bio-list li {
-    margin: auto;
-    justify-content: center;
-    height: auto;
-} .bio-list li:before {
-    padding-right: .25rem;
+    line-height: 3rem;
+    width: auto;
+    word-wrap: break-word;
+} .bio-list li:hover {
+    color: rgba(130, 130, 130, 1);
+} .bio-list li::before {
     font-size: 2rem;
-} .bio-list .gender-sexuality:before {
-    content: "⚦:";
-} .bio-list .general:before {
-    content: "⬡:";
+    padding-right: .5rem;
+} .bio-list li:hover::before {
+    color: rgba(200, 200, 200, 1);
+} .bio-list .gender-sexuality::before {
+    content: "⚦";
+} .bio-list .general::before, .bio-list .politics-list::before {
+    content: "⬡";
 }
+
 
 .bio-text {
     dummy: help;
 }
 
+
 .profilepic-container {
+    height: 350px;
     margin-top: 1rem;
     padding-top: 1rem;
     width: 350px;
-    height: 350px;
 } .profilepic-container img {
-    width: 100%;
+    border-radius: 50%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    width: 100%;
 }
+
 
 .bully-you {
     font-size: .25rem;
