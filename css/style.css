@@ -4,10 +4,16 @@
 }
 
 
+@font-face {
+    font-family: fira-code;
+    src: url(../assets/font/fira_code/FiraCode-Regular.woff2);
+}
+
+
 body {
     background-color: rgba(15, 15, 15, 1);
     color: rgba(195, 195, 195, 1);
-    font-family: monospace;
+    font-family: fira-code;
     font-size: 1.125rem;
     margin-left: 2rem;
     margin-top: 0rem;
@@ -17,6 +23,10 @@ body {
 
 ul {
     list-style: none;
+}
+
+a {
+    transition: color 0.2s ease-in;
 }
 
 h1, h1 a, h1 a:active, h1 a:visited {
@@ -30,11 +40,11 @@ h1, h1 a, h1 a:active, h1 a:visited {
 } h1 a:hover {
     color: var(--primary-lilac-full);
 } h1:hover {
-    color: rgba(130, 130, 130, 1);
+    color: rgba(150, 150, 150, 1);
 }
 
 h2, h2 a, h2 a:active, h2 a:visited {
-    color: rgba(200, 200, 200, 1);
+    color: rgba(210, 210, 210, 1);
     font-size: 1.5rem;
     margin-top: 0rem;
     padding-top: 0rem;
@@ -42,7 +52,7 @@ h2, h2 a, h2 a:active, h2 a:visited {
 } h2 a:hover {
     color: var(--primary-lilac-full);
 }  h2:hover {
-    color: rgba(130, 130, 130, 1);
+    color: rgba(150, 150, 150, 1);
 }
 
 
@@ -55,7 +65,7 @@ hr {
 
 
 .working-on, .working-on a, .working-on a:active, .working-on a:visited  {
-    color: rgba(210, 210, 210, 1);
+    color: rgba(200, 200, 200, 1);
     font-size: 1.1rem;
     text-decoration: none;
 } .working-on a:hover {
@@ -66,7 +76,7 @@ hr {
 } .working-on li {
     line-height: 2rem;
 } .working-on p:hover, .working-on li:hover {
-    color: rgba(130, 130, 130, 1);
+    color: rgba(150, 150, 150, 1);
 } .working-on li::before {
     content: ">";
 } .working-on li:hover::before {
