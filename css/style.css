@@ -1,5 +1,9 @@
 :root {
-    --primary-lilac-full: rgba(201, 147, 236, 1);
+    --color-bg: rgba(15, 15, 15, 1);
+    --color-primary-lilac: rgba(201, 147, 236, 1);
+    --color-header-text: rgba(195, 195, 195, 1);
+    --color-text-body: rgba(210, 210, 210, 1);
+    --color-text-body-hover: rgba(150, 150, 150, 1);
     --transparent: rgba(0, 0, 0, 0);
 }
 
@@ -11,8 +15,8 @@
 
 
 body {
-    background-color: rgba(15, 15, 15, 1);
-    color: rgba(195, 195, 195, 1);
+    background-color: var(--color-bg);
+    color: var(--color-header-text);
     font-family: fira-code;
     font-size: 1.125rem;
     margin-left: 2rem;
@@ -30,7 +34,7 @@ a {
 }
 
 h1, h1 a, h1 a:active, h1 a:visited {
-    color: rgba(210, 210, 210, 1);
+    color: var(--color-text-body);
     font-size: 4rem;
     margin-bottom: 0rem;
     margin-top: 1rem;
@@ -38,49 +42,49 @@ h1, h1 a, h1 a:active, h1 a:visited {
     padding-top: 1rem;
     text-decoration: none;
 } h1 a:hover {
-    color: var(--primary-lilac-full);
+    color: var(--color-primary-lilac);
 } h1:hover {
-    color: rgba(150, 150, 150, 1);
+    color: var(--color-text-body-hover);
 }
 
 h2, h2 a, h2 a:active, h2 a:visited {
-    color: rgba(210, 210, 210, 1);
+    color: var(--color-text-body);
     font-size: 1.5rem;
     margin-top: 0rem;
     padding-top: 0rem;
     text-decoration: none;
 } h2 a:hover {
-    color: var(--primary-lilac-full);
-}  h2:hover {
-    color: rgba(150, 150, 150, 1);
+    color: var(--color-primary-lilac);
+} h2:hover {
+    color: var(--color-text-body-hover);
 }
 
 
 hr {
-    background-image: radial-gradient(ellipse, var(--primary-lilac-full), var(--transparent));
+    background-image: radial-gradient(ellipse, var(--color-primary-lilac), var(--transparent));
     border-style: none;
     height: 0.5rem;
     margin-right: 4rem;
 }
 
 
-.working-on, .working-on a, .working-on a:active, .working-on a:visited  {
-    color: rgba(200, 200, 200, 1);
+.working-on, .working-on a, .working-on a:active, .working-on a:visited {
+    color: var(--color-text-body);
     font-size: 1.1rem;
     text-decoration: none;
 } .working-on a:hover {
-    color: var(--primary-lilac-full);
-}  .working-on ul {
+    color: var(--color-primary-lilac);
+} .working-on ul {
     margin-left: -2rem;
     margin-top: -0.5rem;
 } .working-on li {
     line-height: 2rem;
 } .working-on p:hover, .working-on li:hover {
-    color: rgba(150, 150, 150, 1);
+    color: var(--color-text-body-hover);
 } .working-on li::before {
     content: ">";
 } .working-on li:hover::before {
-    color: rgba(200, 200, 200, 1);
+    color: var(--color-text-body);
 }
 
 
@@ -103,12 +107,12 @@ hr {
     width: auto;
     word-wrap: break-word;
 } .bio-list li:hover {
-    color: rgba(130, 130, 130, 1);
+    color: var(--color-text-body-hover);
 } .bio-list li::before {
     font-size: 2rem;
     padding-right: .5rem;
 } .bio-list li:hover::before {
-    color: rgba(200, 200, 200, 1);
+    color: var(--color-text-body);
 } .bio-list .gender-sexuality::before {
     content: "⚦";
 } .bio-list .general::before, .bio-list .politics-list::before {
